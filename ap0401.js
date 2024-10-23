@@ -126,12 +126,12 @@ function init() {
       vx = -Math.abs(vx);
     }
     // 左
-    if (ball.position.x + ballR < -hLimit) {
+    if (ball.position.x - ballR < -hLimit) {
       ball.position.x = -hLimit + ballR;
       vx = Math.abs(vx);
     }
     // 上
-    if (ball.position.z + ballR < -vLimit) {
+    if (ball.position.z - ballR < -vLimit) {
       ball.position.z = -vLimit + ballR;
       vz = Math.abs(vz);
     }
